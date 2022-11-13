@@ -1,0 +1,4 @@
+rootProject.name = 'dip-multi-modules'
+include("dip-api")
+include("dip-domain")
+include("dip-jpa")

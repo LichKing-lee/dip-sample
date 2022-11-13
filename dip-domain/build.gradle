@@ -1,0 +1,5 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation project(":dip-jpa")
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
