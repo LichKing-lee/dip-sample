@@ -5,7 +5,6 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class Dip {
-    private DipId id;
-    private String message;
+public class DipId {
+    private Long value;
 }

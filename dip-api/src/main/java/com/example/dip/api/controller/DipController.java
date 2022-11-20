@@ -1,6 +1,7 @@
 package com.example.dip.api.controller;
 
 import com.example.dip.domain.Dip;
+import com.example.dip.domain.DipId;
 import com.example.dip.domain.DipService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,8 @@ public class DipController {
 
     @GetMapping
     public Dip create() {
-        Dip dip = dipService.save(new Dip(null, "hello dip"));
+        dipService.save(new Dip(null, "hello dip"));
+        Dip dip = dipService.get(new DipId(1L));
 
         return dip;
     }
